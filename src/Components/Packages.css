@@ -1,0 +1,91 @@
+.card-body {
+  display: flex; /* This could be the cause of horizontal layout */
+  flex-direction: column; /* Explicitly set to column to stack children vertically */
+  background-color: #fdf5f2; /* White background for the content area */
+  color: #362853; /* Deep purple text for contrast */
+   /* Adequate padding around the text */
+  align-items: flex-start; /* Align items to the start of the card */
+}
+
+.card-title {
+  color: #f56c1f; /* Vibrant orange for titles */
+  font-size: 20px; /* Larger font size for prominence */
+  margin-bottom: 15px; /* Space below the title */
+  text-align: left; /* Ensure text aligns to the left */
+}
+
+.card-text {
+  font-size: 16px; /* Legible text size */
+  line-height: 1.6; /* Improved readability */
+  color: #362853; /* Darker text for better readability */
+  text-align: left; /* Ensure text aligns to the left */
+  margin-bottom: 15px; /* Space below the text before the button */
+}
+
+.book {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically if the container has specified height */
+   /* Optional: makes the container full viewport height */
+  text-align: center; /* Ensures text itself is centered if flex properties don't apply as expected */
+  margin-top: 20px; /* Adds some space at the top, adjust as necessary */
+}
+
+.Button {
+  align-self: center; /* Center the button within the card */
+  background-color: #f56c1f; /* Vibrant orange for buttons */
+  color: white; /* White text on buttons */
+  border: none; /* No border for a modern look */
+  padding: 10px 20px; /* Comfortable padding within the button */
+  border-radius: 4px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease-in-out; /* Smooth color transition */
+  width: auto; /* Auto width based on content */
+}
+
+.Button:hover {
+  background-color: #e6550d; /* Darken button color on hover for interaction feedback */
+}
+
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));  
+  grid-gap: 30px; 
+  justify-content: space-between;  
+  margin: 20px;
+  width: 100%;
+  border: none; /* Remove default borders */
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures no content spills outside the border radius */
+  transition: transform 0.3s ease-in-out; /* Smooth transformation on hover */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight raise effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increased shadow on hover for more depth */
+}
+
+
+/* Modal overlay styling for booking confirmation */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for focus */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}

@@ -1,0 +1,47 @@
+.form-container {
+    width: 50%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f56c1f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 576px) {
+    .input-group {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .input,
+    .submit-button {
+      width: 50%;
+    }
+  
+    .submit-button {
+      margin-top: 10px;
+    }
+  }
+  

@@ -1,0 +1,124 @@
+.services-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3rem; 
+  flex-wrap: wrap;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  max-width: 60%;
+}
+
+.image-container {
+  width: 100%; 
+  max-width: 40%; 
+  text-align: center;
+}
+
+.travel-bus-image {
+  width: 100%; 
+  height: auto; 
+  max-width: 100%;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 4.5vw, 3rem);
+  color: #362853;
+  font-family: 'Merriweather', serif;
+}
+
+h2 {
+  color: #f56c1f;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.service-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .service-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .service-box {
+    flex-direction: row;
+    width: 45%; 
+    margin-bottom: 2rem;
+  }
+}
+
+.service-icon {
+  width: 5rem; 
+  height: 5rem; 
+  border-radius: 1rem;
+  background-color: #ffffff;
+  display: flex;
+  margin-right: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon img {
+  width: 80%; 
+  height: auto; 
+}
+
+.service-details {
+  text-align: left;
+  flex-grow: 1;
+}
+
+@media (min-width: 992px) {
+  .services-wrapper {
+    padding: 50px;
+  }
+
+  .service-box {
+    flex-direction: row;
+    width: auto;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .service-icon {
+    width: 3rem; 
+    height: 3rem; 
+  }
+
+  .service-icon img {
+    width: 80%; 
+  }
+
+  .service-box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .how-we-work, .services-offered, .service-heading, .service-text {
+    font-size: calc(0.625rem + 2vw); 
+  }
+}
+
+@media (max-width: 767px) {
+  .services-wrapper {
+    padding: 2rem; 
+  }
+}

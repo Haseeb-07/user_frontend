@@ -1,0 +1,142 @@
+.footer {
+    background-color: #FFF4F4;
+    padding: 30px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+
+  .copyright-bar {
+    text-align: center;
+  }
+  
+  .footer-main {
+    flex-basis: 25%;
+    text-align: left;
+  }
+
+  .footer-main p {
+    margin-top: 20px;
+    color: #272444; 
+    font-size: 16px; 
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif; 
+    opacity: 0.7;
+  }
+  
+  .footer-column {
+    flex-basis: 12%;
+    margin-right: 2%;
+    text-align: left;
+  }
+  
+  .footer-column:last-child {
+    margin-right: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-main {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .footer-column {
+      flex-basis: 48%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .footer-heading {
+    color: #362853;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif; 
+    margin-bottom: 30px;
+  }
+  
+  .footer-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-list li {
+    margin-bottom: 20px;
+    color: #272444; 
+    font-size: 16px; 
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif; 
+    opacity: 0.7;
+  }
+  
+  .footer-icon {
+    margin-top: 9px;
+    margin-right: 40px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .footer-line {
+    border: none;
+    border-top: 1px solid rgba(245, 108, 31, 0.2); 
+    margin: 5px 0; 
+    margin-bottom: 30px;
+  }
+
+  .copyright-bar {
+    height: 20px
+    
+  }
+
+  .copyright-bar p {
+    color: #272444; 
+    font-size: 16px; 
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif; 
+    opacity: 0.6;
+  }
+
+  .footer-heading, .footer-list li, .footer-main p, .copyright-bar p {
+    font-size: calc(0.8rem + 0.2vw); 
+}
+
+@media (max-width: 768px) {
+    .footer-heading {
+        font-size: calc(1rem + 0.5vw); 
+    }
+    
+    .footer-list li, .footer-main p {
+        font-size: calc(0.75rem + 0.5vw); 
+    }
+}
+
+.footer-icon {
+  height: calc(35px + 0.5vw);  
+  width: calc(35px + 0.5vw);  
+}
+
+@media (max-width: 768px) {
+  .footer-icon {
+      height: 30px;  
+      width: 30px;  
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column; 
+  }
+
+  .footer-main, .footer-column {
+      flex-basis: 100%; 
+      margin-bottom: 20px;
+  }
+
+  .footer-column {
+      margin-right: 0;  
+  }
+}

@@ -1,0 +1,40 @@
+.container {
+  max-width: 1200px; /* or your preferred max width */
+  margin: auto;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust based on your preference */
+  grid-gap: 20px; /* Space between cards */
+  padding: 20px;
+}
+
+.dest-card {
+  background: #FFF; /* Background color for the cards */
+  border: 1px solid #ccc; /* Optional border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a bit of depth */
+  border-radius: 8px; /* Rounded corners for aesthetics */
+}
+
+.dest-card-body {
+  padding: 15px;
+}
+
+.dest-card-title {
+  color: #f56c1f; /* Title color, can be adjusted */
+  font-size: 1.25rem; /* Title font size */
+}
+
+.dest-card-text {
+  color: #3f3f3f; /* Text color, can be adjusted */
+  font-size: 1rem; /* Text font size */
+}
+
+.Dest h3 {
+  margin-left: 0; /* Aligning the heading */
+  font-size: clamp(1.5rem, 4.5vw, 3rem);
+  color: #362853;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
